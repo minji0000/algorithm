@@ -3,7 +3,7 @@ package main.java;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class A250217 {
+public class Sample {
     public int[] solution(int[] arr, int divisor) {
 
 
