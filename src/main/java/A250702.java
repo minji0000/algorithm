@@ -17,11 +17,11 @@ public class A250702
             for (int i = 1; i < n; i++) {
                 for (int j = 0; j <= i; j++) {
                     if (j == 0) {
-                        dp[i][j] = dp[i-1][j] + ____;  // 왼쪽 끝인 경우
+                        dp[i][j] = dp[i-1][j] + triangle[i][0];  // 왼쪽 끝인 경우
                     } else if (j == i) {
-                        dp[i][j] = dp[i-1][j-1] + ____;  // 오른쪽 끝인 경우
+                        dp[i][j] = dp[i-1][j-1] + triangle[i][i];  // 오른쪽 끝인 경우
                     } else {
-                        dp[i][j] = Math.max(dp[i-1][j-1], dp[i-1][j]) + ____;  // 중간인 경우
+                        dp[i][j] = Math.max(dp[i-1][j-1], dp[i-1][j]) + triangle[i][j];  // 중간인 경우
                     }
                 }
             }
